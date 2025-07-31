@@ -1,5 +1,10 @@
 function redirecionarFinal() {
-    setTimeout(function(){
+    // Evita redirecionamento múltiplo caso o usuário clique mais de uma vez
+    if (window.redirecionando) return;
+    window.redirecionando = true;
+
+    // Aumenta o tempo para garantir que o Google Forms processe os dados
+    setTimeout(function () {
         window.location.href = 'final.html';
-    }, 500); // tempo para envio antes do redirecionamento
+    }, 1500); // 1,5 segundos para o redirecionamento
 }
