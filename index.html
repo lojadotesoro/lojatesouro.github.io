@@ -20,25 +20,9 @@
 </head>
 <body>
   <!-- Google Forms embutido -->
-  <iframe id="formulario"
+  <iframe
     src="https://docs.google.com/forms/d/e/1FAIpQLSe8eIXv9inoijlrUzGHfhA9GsZBAytYieJW-t6-V5Saoe0CfA/viewform?embedded=true">
+    Carregando…
   </iframe>
-
-  <script>
-    // Detecta envio do formulário pela URL de confirmação
-    const iframe = document.getElementById("formulario");
-    iframe.addEventListener("load", function() {
-      try {
-        const url = iframe.contentWindow.location.href;
-        if (url.includes("formResponse")) {
-          // Redireciona para o WhatsApp da loja com mensagem personalizada
-          window.location.href = "https://wa.me/5516997986457?text=" +
-            encodeURIComponent("Olá, acabei de fazer meu cadastro no site e preciso de ajuda com meu produto.");
-        }
-      } catch (e) {
-        console.log("Aguardando envio do formulário...");
-      }
-    });
-  </script>
 </body>
 </html>
