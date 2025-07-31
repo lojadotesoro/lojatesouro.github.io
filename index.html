@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Loja do Tesouro</title>
+    <title>Cadastro de Clientes - Loja do Tesouro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <img src="logo.jpg" alt="Logo Loja do Tesouro" class="logo">
-        <h1>Cadastro Loja do Tesouro</h1>
-        <p>Preencha seus dados abaixo:</p>
-        <form id="cadastroForm" action="pagina-final.html" method="GET">
-            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
-            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
-            <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
-            <button type="submit" class="btn">Enviar Cadastro</button>
+        <h1>Cadastre-se para continuar</h1>
+        <form id="cadastroForm" action="https://docs.google.com/forms/d/e/1FAIpQLSe8eIXv9inoijlrUzGHfhA9GsZBAytYieJW-t6-V5Saoe0CfA/formResponse" method="POST" target="hidden_iframe" onsubmit="mostrarWhatsapp();">
+            <label for="nome">Nome:</label>
+            <input type="text" name="entry.235514083" id="nome" required>
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="entry.167377259" id="telefone" required>
+            <label for="email">Email:</label>
+            <input type="email" name="entry.2050818490" id="email" required>
+            <button type="submit">Enviar Cadastro</button>
         </form>
+        <div id="whatsappContainer" style="display:none;">
+            <p>Cadastro realizado com sucesso! Clique no botão abaixo para confirmar no WhatsApp:</p>
+            <a id="whatsappLink" href="https://wa.me/5516997986457?text=Olá! Acabei de me cadastrar e preciso de ajuda com meu produto." target="_blank">
+                <button>Ir para o WhatsApp</button>
+            </a>
+        </div>
+        <iframe name="hidden_iframe" style="display:none;"></iframe>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
