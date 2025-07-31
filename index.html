@@ -25,11 +25,19 @@
   </iframe>
 
   <script>
-    // Redireciona automaticamente para WhatsApp após 2 segundos do carregamento do formulário
-    document.getElementById("formulario").addEventListener("load", function() {
-      setTimeout(function() {
-        window.location.href = "https://wa.me/5516997424406?text=Cadastro%20realizado%20com%20sucesso!";
-      }, 2000);
+    // Detecta envio do formulário pela URL de confirmação
+    const iframe = document.getElementById("formulario");
+    iframe.addEventListener("load", function() {
+      try {
+        const url = iframe.contentWindow.location.href;
+        if (url.includes("formResponse")) {
+          // Redireciona para o WhatsApp da loja com mensagem personalizada
+          window.location.href = "https://wa.me/5516997986457?text=" +
+            encodeURIComponent("Olá, acabei de fazer meu cadastro no site e preciso de ajuda com meu produto.");
+        }
+      } catch (e) {
+        console.log("Aguardando envio do formulário...");
+      }
     });
   </script>
 </body>
