@@ -1,45 +1,40 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     background: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
 .container {
-    background: #ffffff;
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     text-align: center;
-    width: 90%;
-    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .logo {
     width: 120px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 h1 {
     color: #0033a0;
-    font-size: 22px;
 }
 
 label {
     display: block;
     text-align: left;
-    margin-top: 10px;
+    margin: 10px 0 5px;
     font-weight: bold;
 }
 
 input {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -48,31 +43,23 @@ button {
     background: #0033a0;
     color: white;
     border: none;
-    padding: 10px;
-    margin-top: 15px;
-    width: 100%;
+    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
 }
 
 button:hover {
     background: #002070;
 }
 
-.hidden {
-    display: none;
-}
-
-.whatsapp-btn {
-    display: block;
-    margin-top: 15px;
+.btn {
+    display: inline-block;
     background: #25d366;
     color: white;
-    padding: 12px;
     text-decoration: none;
+    padding: 10px 20px;
     border-radius: 5px;
-}
-
-.whatsapp-btn:hover {
-    background: #1eb346;
+    font-size: 16px;
+    margin-top: 20px;
 }

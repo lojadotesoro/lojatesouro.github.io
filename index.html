@@ -10,22 +10,16 @@
     <div class="container">
         <img src="logo.jpg" alt="Logo Loja do Tesouro" class="logo">
         <h1>Cadastre-se para continuar</h1>
-        <form id="cadastroForm">
+        <form id="cadastroForm" action="https://docs.google.com/forms/d/e/1FAIpQLSe8eIXv9inoijlrUzGHfhA9GsZBAytYieJW-t6-V5Saoe0CfA/formResponse" method="POST" target="hidden_iframe" onsubmit="redirecionarFinal();">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
+            <input type="text" name="entry.235514083" id="nome" required>
             <label for="telefone">Telefone:</label>
-            <input type="text" id="telefone" name="telefone" required>
-
+            <input type="text" name="entry.167377259" id="telefone" required>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
+            <input type="email" name="entry.2050818490" id="email" required>
             <button type="submit">Enviar Cadastro</button>
         </form>
-        <div id="whatsappLink" class="hidden">
-            <a href="https://wa.me/5516997986457?text=Olá! Acabei de me cadastrar e preciso de ajuda com meu produto." 
-               target="_blank" class="whatsapp-btn">Ir para o WhatsApp</a>
-        </div>
+        <iframe name="hidden_iframe" style="display:none;"></iframe>
     </div>
     <script src="script.js"></script>
 </body>
