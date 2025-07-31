@@ -9,14 +9,14 @@
 <body>
     <div class="container">
         <img src="logo.jpg" alt="Logo Loja do Tesouro" class="logo">
-        <h1>Bem-vindo(a) à Loja do Tesouro</h1>
-        <p>Para continuar, realize seu cadastro clicando no botão abaixo:</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8eIXv9inoijlrUzGHfhA9GsZBAytYieJW-t6-V5Saoe0CfA/viewform" 
-           target="_blank" class="btn">
-           Fazer Cadastro
-        </a>
-        <p>Após finalizar o cadastro, clique abaixo para confirmar:</p>
-        <a href="pagina-final.html" class="btn confirmar">Confirmar Cadastro</a>
+        <h1>Cadastro Loja do Tesouro</h1>
+        <p>Preencha seus dados abaixo:</p>
+        <form id="cadastroForm" action="pagina-final.html" method="GET">
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
+            <button type="submit" class="btn">Enviar Cadastro</button>
+        </form>
     </div>
 </body>
 </html>

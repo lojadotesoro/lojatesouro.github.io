@@ -38,6 +38,15 @@ p {
     color: #555;
 }
 
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
 .btn {
     display: block;
     background: #0033A0;
@@ -46,7 +55,7 @@ p {
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .btn:hover {
