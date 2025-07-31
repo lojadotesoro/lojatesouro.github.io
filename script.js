@@ -1,1 +1,1 @@
-// Não há redirecionamento automático. Tudo manual.
+// Arquivo de scripts para futuras funcionalidades
