@@ -1,0 +1,18 @@
+name: Deploy Diário
+
+on:
+  schedule:
+    - cron: "0 3 * * *"  # Executa todo dia às 03:00 UTC
+  workflow_dispatch:     # Permite rodar manualmente também
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositório
+        uses: actions/checkout@v3
+
+      - name: Deploy automático
+        run: |
+          echo "Deploy diário executado com sucesso!"
